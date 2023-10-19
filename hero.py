@@ -19,5 +19,5 @@ class Hero():
         """движение героя"""
         if self.move_right and self.rect.right < self.screen_rect.right:
             self.rect.centerx += 1
-        elif self.move_left and self.rect.left > 0:
+        elif self.move_left and self.rect.left > self.screen_rect.left:
             self.rect.centerx -= 1
