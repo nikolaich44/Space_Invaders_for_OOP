@@ -9,7 +9,7 @@ class Bullet(pygame.sprite.Sprite):
         self.rect.centerx = hero.rect.centerx
         self.rect.top = hero.rect.top
         self.speed = 4.4
-        self.y = float(self.rect.y)
+        self.y = self.rect.y
 
     def draw_bullet(self):
         pygame.draw.rect(self.screen, self.color, self.rect)
